@@ -15,7 +15,6 @@
 
 @media (max-width: 750px) {
   .profile__personal-info {
-    margin: auto;
     font-size: 14px;
     line-height: 1.21;
     margin: 0 auto 30px;
