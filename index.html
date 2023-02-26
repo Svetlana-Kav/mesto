@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/index.css">
+    <title>MESTO</title>
+</head>
+<body class="page">
+    <header class="header">
+        <img class="header__logo" src="./images/logo.svg" alt="место Россия">
+        <img class="header__line" src="./images/Line.svg" alt="прямая линия">
+    </header>
+    <section class="profile">
+      <img class="profile__avatar" src="./images/Avatar.svg" alt="фото Жак-Ив Кусто">
+      <div class="profile__info">
+        <p class="profile__name">Жак-Ив Кусто</p>
+        <button class="profile__edit-button"></button>
+        <p class="profile__personal-info">Исследователь океана</p>
+      </div>
+      <button class="profile__add-button"></button>
+    </section>
+    <section class="popup">
+      <form class="popup__container">
+        <button class="popup__close-icon"></button>
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <input class="popup__name" type="text">
+        <input class="popup__personal-info" type="text">
+        <button class="popup__submit-button">Сохранить</button>
+      </form>
+    </section>
+    <section class="elements">
+      <article class="element">
+        <img class="element__image" src="./images/photo-grid-baikal-2.jpg" alt="берег Байкала">
+        <p class="element__text">Байкал</p>
+        <button class="element__like-button"></button>
+      </article>
+      <article class="element">
+        <img class="element__image" src="./images/photo-grid-elbrus.jpg" alt="вершина Эльбруса">
+        <p class="element__text">Эльбрус</p>
+        <button class="element__like-button"></button>
+      </article>
+      <article class="element">
+        <img class="element__image" src="./images/photo-grid-ergaki.jpg" alt="вершина горы в тумане">
+        <p class="element__text">Ергаки</p>
+        <button class="element__like-button"></button>
+      </article>
+      <article class="element">
+        <img class="element__image" src="./images/photo-grid-kamchatka-1.jpg" alt="холмы в тумане">
+        <p class="element__text">Камчатка</p>
+        <button class="element__like-button"></button>
+      </article>
+      <article class="element">
+        <img class="element__image" src="./images/photo-grid-kamchatka-2.jpg" alt="гора вдалеке">
+        <p class="element__text">Камчатка</p>
+        <button class="element__like-button"></button>
+      </article>
+      <article class="element">
+        <img class="element__image" src="./images/photo-grid-atharva-tulsi.jpg" alt="заснеженная вершина Эльбруса в тумане">
+        <p class="element__text">Эльбрус</p>
+        <button class="element__like-button"></button>
+      </article>
+    </section>
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2023 Mesto Russia</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

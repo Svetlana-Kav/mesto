@@ -1,0 +1,21 @@
+.popup__personal-info {
+  border: none;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 8px;
+  margin-bottom: 48px;
+}
+
+@media (max-width: 750px) {
+  .popup__personal-info {
+    margin-bottom: 43px;
+  }
+}
+
+.popup__personal-info::placeholder {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #000000;
+}
