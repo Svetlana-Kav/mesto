@@ -1,4 +1,4 @@
-.popup__container {
+.popup-container {
   display: none;
   position: fixed;
   top: 0;
@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-.popup__container::before {
+.popup-container::before {
   content: '';
   position: absolute;
   width: 100%;
