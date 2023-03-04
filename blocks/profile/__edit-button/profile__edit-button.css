@@ -1,5 +1,5 @@
 .profile__edit-button {
-  background: url(../../../images/Edit\ Button.svg);
+  background: url(../../../images/EditButton.svg);
   width: 24px;
   height: 24px;
   margin: 5px 0px 0px 18px;
@@ -7,7 +7,6 @@
   padding: 0;
   border: none;
   background-size: contain;
-  cursor: pointer;
 }
 
 @media (max-width: 750px) {
@@ -16,4 +15,8 @@
    width: 18px;
    height: 18px;
   }
+}
+
+.profile__edit-button:hover {
+  cursor: pointer;
 }

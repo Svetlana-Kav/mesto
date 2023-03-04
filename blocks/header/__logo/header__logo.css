@@ -4,7 +4,7 @@
   margin-bottom: 41px;
 }
 
-@media (min-width: 767px) and (max-width: 940px) {
+@media (max-width: 940px) {
   .header__logo {
    margin-left: 5%;
   }

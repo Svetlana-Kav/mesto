@@ -6,7 +6,7 @@
   padding-top: 40px;
 }
 
-@media (min-width: 750px) and (max-width: 960px) {
+@media (max-width: 960px) {
   .profile {
    margin: 0 5%;
   }
@@ -15,7 +15,7 @@
 @media (max-width: 750px) {
   .profile {
     flex-direction: column;
-    margin: auto;
     max-width: 282px;
+    margin: auto;
   }
 }
