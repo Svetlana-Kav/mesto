@@ -1,0 +1,8 @@
+.popup__form {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+

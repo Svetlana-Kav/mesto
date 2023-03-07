@@ -1,21 +1,21 @@
 let page = document.querySelector('.page'); //вся страница
-let popupContainer = page.querySelector('.popup-container'); //блок попап контейнер
+let popup = page.querySelector('.popup'); //блок попап контейнер
 let profileEditButton = page.querySelector('.profile__edit-button');
-let popupCloseIcon = popupContainer.querySelector('.popup__close-icon');
+let popupCloseIcon = popup.querySelector('.popup__close-icon');
 let profileName = page.querySelector('.profile__name');
 let profilePersonalInfo = page.querySelector('.profile__personal-info');
-let popupName = popupContainer.querySelector('.popup__name');
-let popupPersonalInfo = popupContainer.querySelector('.popup__personal-info');
-let popup = page.querySelector('.popup');
+let popupName = popup.querySelector('.popup__input_type_name');
+let popupPersonalInfo = popup.querySelector('.popup__input_type_info');
+let popupForm = page.querySelector('.popup__form');  //popup
 
 function openEdit () {
-  popupContainer.classList.add('popup_opened');
-  popupName.setAttribute('placeholder', `${profileName.textContent}`);
-  popupPersonalInfo.setAttribute('placeholder', `${profilePersonalInfo.textContent}`);
+  popup.classList.add('popup_opened');
+  popupName.setAttribute('value', `${profileName.textContent}`);
+  popupPersonalInfo.setAttribute('value', `${profilePersonalInfo.textContent}`);
 }
 
 function closeEdit () {
-  popupContainer.classList.remove('popup_opened');
+  popup.classList.remove('popup_opened');
 }
 
 
@@ -30,5 +30,5 @@ function handleFormSubmit (evt) {
 
 profileEditButton.addEventListener('click', openEdit);
 popupCloseIcon.addEventListener('click', closeEdit);
-popup.addEventListener('submit', handleFormSubmit);
+popupForm.addEventListener('submit', handleFormSubmit);
 
