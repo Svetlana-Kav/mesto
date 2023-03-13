@@ -1,0 +1,5 @@
+@media (max-width: 750px) {
+  .popup_type_photo-viewer {
+   background-color: rgba(0, 0, 0, 0.9);
+  }
+}

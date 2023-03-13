@@ -11,7 +11,7 @@
     <header class="header">
       <img class="header__logo" src="./images/logo.svg" alt="место Россия">
     </header>
-    <main>
+    <main class="main">
       <section class="profile">
         <img class="profile__avatar" src="./images/Avatar.svg" alt="фото Жак-Ив Кусто">
         <div class="profile__info">
@@ -22,52 +22,50 @@
         <button type="button" class="profile__add-button"></button>
       </section>
       <section class="elements">
-        <article class="element">
-          <img class="element__image" src="./images/photo-grid-baikal-2.jpg" alt="берег Байкала">
-          <h2 class="element__text">Байкал</h2>
-          <button type="button" class="element__like-button"></button>
-        </article>
-        <article class="element">
-          <img class="element__image" src="./images/photo-grid-elbrus.jpg" alt="вершина Эльбруса">
-          <h2 class="element__text">Эльбрус</h2>
-          <button type="button" class="element__like-button"></button>
-        </article>
-        <article class="element">
-          <img class="element__image" src="./images/photo-grid-ergaki.jpg" alt="вершина горы в тумане">
-          <h2 class="element__text">Ергаки</h2>
-          <button type="button" class="element__like-button"></button>
-        </article>
-        <article class="element">
-          <img class="element__image" src="./images/photo-grid-kamchatka-1.jpg" alt="холмы в тумане">
-          <h2 class="element__text">Камчатка</h2>
-          <button type="button" class="element__like-button"></button>
-        </article>
-        <article class="element">
-          <img class="element__image" src="./images/photo-grid-kamchatka-2.jpg" alt="гора вдалеке">
-          <h2 class="element__text">Камчатка</h2>
-          <button type="button" class="element__like-button"></button>
-        </article>
-        <article class="element">
-          <img class="element__image" src="./images/photo-grid-atharva-tulsi.jpg" alt="заснеженная вершина Эльбруса в тумане">
-          <h2 class="element__text">Эльбрус</h2>
-          <button type="button" class="element__like-button"></button>
-        </article>
+
       </section>
     </main>
     <footer class="footer">
       <p class="footer__copyright">&copy; 2023 Mesto Russia</p>
     </footer>
-    <div class="popup">
-      <div class="popup__container"> <!--popup-container-->
+    <div class="popup popup_type_edit-profie">
+      <div class="popup__container">
         <button type="button" class="popup__close-icon"></button>
         <h2 class="popup__title">Редактировать профиль</h2>
-        <form name="profileForm" class="popup__form"> <!--popup-->
+        <form name="profileForm" class="popup__form">
           <input name="name" placeholder="Жак-Ив Кусто" required class="popup__input popup__input_type_name" type="text">
           <input name="personalInfo" placeholder="Исследователь океана" required class="popup__input popup__input_type_info" type="text">
           <button class="popup__submit-button">Сохранить</button>
         </form>
       </div>
     </div>
+    <div class="popup popup_type_add-card">
+      <div class="popup__container">
+        <button type="button" class="popup__close-icon popup__close-icon_type_add-card"></button>
+        <h2 class="popup__title">Новое место</h2>
+        <form name="addCardForm" class="popup__form_type_add-card">
+          <input name="nameCard" placeholder="Название" required class="popup__input popup__input_type_name-card" type="text">
+          <input name="linkImage" placeholder="Ссылка на картинку" required class="popup__input popup__input_type_link-image" type="text">
+          <button class="popup__submit-button ">Создать</button>
+        </form>
+      </div>
+    </div>
+    <div class="popup popup_type_photo-viewer">
+      <div class="popup__photo-viewer">
+        <button type="button" class="popup__close-icon  popup__close-icon_type_photo-viewer"></button>
+        <img class="popup__image" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg" alt="">
+        <p class="popup__name-image"></p>
+      </div>
+    </div>
+    <template id="card-template">
+        <article class="element">
+          <button class="element__delete-button"></button>
+          <img class="element__image" src="./images/photo-grid-baikal-2.jpg" alt="берег Байкала">
+          <h2 class="element__text">Байкал</h2>
+          <button type="button" class="element__like-button"></button>
+        </article>
+    </template>
     <script src="./scripts/script.js"></script>
 </body>
 </html>
+
